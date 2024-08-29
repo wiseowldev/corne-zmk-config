@@ -40,21 +40,30 @@
             >;
         };
 
-        layer_1 {
+        numeric {
             bindings = <
-  &mt F1 N1        &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F4 NUMBER_4  &mt F5 N5     &trans  &trans      &kp UP            &trans      &kp C_VOL_UP
-  &mt F6 NUMBER_6  &mt F7 N7        &mt F8 N8        &mt F9 N9        &mt F10 N0    &trans  &kp LEFT    &kp DOWN          &kp RIGHT   &kp C_VOL_DN
-  &kp F11          &kp F12          &kp ESCAPE       &trans           &trans        &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &trans
-                                    &trans           &trans           &trans        &trans  &trans      &trans
+  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans      &kp UP            &trans      &kp C_VOL_UP
+  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &kp LEFT    &kp DOWN          &kp RIGHT   &kp C_VOL_DN
+  &trans  &trans  &trans  &trans  &trans    &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &mo 3
+                  &trans  &trans  &trans    &trans  &trans      &trans
             >;
         };
 
-        layer_2 {
+        specials {
             bindings = <
   &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)
   &kp MINUS     &kp EQUAL   &kp GRAVE      &kp LBKT      &kp RBKT         &kp COMMA      &kp SEMI      &kp SQT       &kp SLASH     &trans
   &trans        &trans      &trans         &kp BSLH      &trans           &trans         &kp PERIOD    &trans        &trans        &trans
                             &trans         &trans        &trans           &trans         &trans        &trans
+            >;
+        };
+
+        function {
+            bindings = <
+  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &trans  &trans  &trans  &trans
+  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &trans  &trans  &trans  &trans
+  &kp F11  &kp F12  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
+                    &trans  &trans  &trans     &trans  &trans  &trans
             >;
         };
     };
